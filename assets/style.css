@@ -33,9 +33,9 @@ img {
   display: block;
 }
 
- a {
+ /* a {
   text-decoration: none;
-}
+} */
 
 .navbar {
   padding-top: 1rem;
