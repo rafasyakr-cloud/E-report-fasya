@@ -66,227 +66,233 @@
         <section id="reports">
             <div class="container">
                 <!-- judul -->
-                 <div class="text-center">
+                <div class="d-flex flex-column text-center flex-lg-row text-lg-start align-items-center justify-content-between mt-5 gap-2">
+                  <div class="col-lg-8">
                     <h1 class="fw-bold" data-aos="fade-down" data-aos-duration="1000">Semua <span class="text-primary">laporan</span></h1>
-                    <p class="text-secondary lh-lg" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sequi cum, a nemo dignissimos quas temporibus corporis vel quidem deleniti voluptate commodi dolorum esse hic.</p>
+                    <p class="text-secondary lh-lg" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">Temukan dan pantau semua laporan fasilitas yang telah disampaikan. Setiap laporan membantu kami meningkatkan kualitas, kebersihan, dan kenyamanan lingkungan bersama.</p>
+                  </div>
+                  <div class="col-lg-2">
+                    <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Tambah Laporan</button>
+                  </div>
+                </div>
+                <!-- filter -->
+                <div class="row gap-3 gap-md-0 align-items-center mt-3" data-aos="fade-out" data-aos-duration="1000" data-aos-delay="500">
+                  <div class="col-md-4">
+                      <input type="text" class="form-control shadow-lg" placeholder="cari laporan....">
+                  </div>
+                  <div class="col">
+                      <select class="form-select shadow-lg">
+                          <option selected>Pilih kategori</option>
+                          <option value="akademik">Akademik</option>
+                          <option value="fasilitas">Fasilitas</option>
+                          <option value="anonymous">Anonymous</option>
+                      </select>
+                  </div>
+                  <div class="col"> 
+                        <select class="form-select shadow-lg">
+                          <option selected>Urutan</option>
+                          <option value="akademik">Terbaru</option>
+                          <option value="fasilitas">Terlama</option>
+                          <option value="anonymous">Terpopuler</option>
+                      </select></div>
+                  <div class="col-md-3">
+                      <button class="btn btn-primary w-100 shadow-lg">
+                          <i class="fa-solid fa-bars"></i>
+                          Filter
+                      </button>
+                  </div>
+                </div>
+                <!-- reports -->
+                <div class="row mt-5">
+                  <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/images/keran rusak.webp" class="card-img-top" alt="keran rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Keran Wudhu</h5>
+                        <small>By: <a class="text-decoration-none" href="">Raffasya</a> 2 days ago</small>
+                        <p class="card-text mt-3">Kondisi keran wudhu bocor dan aliran air mengecil, perlu tindakan perbaikan segara.😫</p>
+                        <a href="detail-report.html" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/images/omprenk mbg.jpg" class="card-img-top" alt="keran rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">Omprenkk MBG😖</h5>
+                        <small>By: <a class="text-decoration-none" href="">Ridwan</a> 12 month ago</small>
+                        <p class="card-text mt-3">Kondisi ompreng wadah makan kurang bersih dan perlu penanganan higienis.🥴</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">AC Panas🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
+                        <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">AC Panas🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
+                        <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">AC Panas🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
+                        <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">AC Panas🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
+                        <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">AC Panas🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
+                        <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">AC Panas🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
+                        <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="card">
+                      <div class="kategori position-absolute px-3 py-2">
+                        <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                      </div>
+                      <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
+                      <div class="card-body">
+                        <h5 class="card-title">AC Panas🔥</h5>
+                        <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
+                        <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
+                        <a href="#" class="btn btn-primary">Selengkapnya...</a>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- pagination -->
+                  <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center mt-5">
+                          <li class="page-item disabled"><a class="page-link" href="index.html#hero">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                      </nav>
                 </div>
             </div>
 
-                 <!-- filter -->
-                  <div class="row gap-3 gap-md-0 align-items-center" data-aos="fade-out" data-aos-duration="1000" data-aos-delay="500">
-                    <div class="col-md-4">
-                        <input type="text" class="form-control shadow-lg" placeholder="cari laporan....">
-                    </div>
-                    <div class="col">
-                        <select class="form-select shadow-lg">
-                            <option selected>Pilih kategori</option>
-                            <option value="akademik">Akademik</option>
-                            <option value="fasilitas">Fasilitas</option>
-                            <option value="anonymous">Anonymous</option>
-                        </select>
-                    </div>
-                    <div class="col"> 
-                         <select class="form-select shadow-lg">
-                            <option selected>Urutan</option>
-                            <option value="akademik">Terbaru</option>
-                            <option value="fasilitas">Terlama</option>
-                            <option value="anonymous">Terpopuler</option>
-                        </select></div>
-                    <div class="col-md-3">
-                        <button class="btn btn-primary w-100 shadow-lg">
-                            <i class="fa-solid fa-bars"></i>
-                            Filter
-                        </button>
-                    </div>
+        </section>
+
+        <!-- add Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header bg-primary text-white fw-bold">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  <i class="fa-solid fa-pen-to-square"></i> Formulir tambah laporan</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <form action="">
+                <div class="modal-body p-5">
+                  <div class="mb-3">
+                    <label  class="form-label fw-bold"> Judul Laporan:</label>
+                    <input class="form-control shadow-lg" type="text">
                   </div>
-        </section>
-          <!-- reports -->
-   <div class="row mt-5">
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
+                  <div class="mb-3">
+                    <label  class="form-label fw-bold" for="">Pilih Kategori:</label>
+                    <select class="form-select shadow-lg"> 
+                      <option selected>pilih kategori...</option>
+                      <option value="akademik">Akademik</option>
+                      <option value="fasilitas">Fasilitas</option>
+                      <option value="anonymous">Anonymous</option>
+                    </select>
+                  </div>
+                   <div class="mb-3">
+                    <label class="form-label fw-bold" for=""> Deskripsi Laporan:</label>
+                    <textarea class="form-control shadow-lg" rows="4" name="" id="" placeholder="tulis laporan anda..."></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label  class="form-label fw-bold" for=""> Upluod Foto:</label>
+                    <input class="form-control shadow-lg" type="file" name="" id="" accept="image/*"></input>
+                  </div>
+                <div class="modal-footer">
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                  <button type="submit" class="btn btn-primary">
+                   <i class="fa-solid fa-paper-plane"></i> Kirim Laporan
+                  </button>
                 </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/keran rusak.webp" class="card-img-top" alt="keran rusak">
-                <div class="card-body">
-                  <h5 class="card-title">Keran Wudhu</h5>
-                  <small>By: <a class="text-decoration-none" href="">Raffasya</a> 2 days ago</small>
-                  <p class="card-text mt-3">Kondisi keran wudhu bocor dan aliran air mengecil, perlu tindakan perbaikan segara.😫</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
+              </form>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/omprenk mbg.jpg" class="card-img-top" alt="keran rusak">
-                <div class="card-body">
-                  <h5 class="card-title">Omprenkk MBG😖</h5>
-                  <small>By: <a class="text-decoration-none" href="">Ridwan</a> 12 month ago</small>
-                  <p class="card-text mt-3">Kondisi ompreng wadah makan kurang bersih dan perlu penanganan higienis.🥴</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
-              <div class="card">
-                <div class="kategori position-absolute px-3 py-2">
-                  <a class="text-white text-decoration-none" href="">Fasilitas</a>
-                </div>
-                <img style="max-height:300px; overflow:hidden;" src="./assets/images/ac rusak.jpg" class="card-img-top" alt="ac rusak">
-                <div class="card-body">
-                  <h5 class="card-title">AC Panas🔥</h5>
-                  <small>By: <a class="text-decoration-none" href="">Khalifah</a> 12 days ago</small>
-                  <p class="card-text mt-3">AC tidak dingin dan mengeluarkan tetesan air, butuh service dan perbaikan segera.🥵🥵</p>
-                  <a href="#" class="btn btn-primary">Selengkapnya...</a>
-                </div>
-              </div>
-            </div>
-            <!-- pagination -->
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center mt-5">
-                    <li class="page-item disabled"><a class="page-link" href="index.html#hero">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-                </nav>
           </div>
-        </section>
+        </div>
         
          <!-- section footer -->
        <footer class="bg-primary py-5 mt-5">
         <div class="container">
-          <div class="row py-5 row-gap-4 justify-content-between ">
+          <div class="row py-5 row-gap-4 justify-content-between">
             <div class="col-md-4 text-white">
               <div class="d-flex align-items-center gap-2 mb-2">
                 <img src="./assets/images/logo idn.png" alt="logo idn" width="30" class="d-inline-block align-text-top rounded-circle"/>
